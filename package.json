@@ -1,0 +1,20 @@
+{
+  "name": "dad's-joke-api_assignment",
+  "version": "1.0.0",
+  "description": "Creation of a nodejs server using express and axios to setup an API that when called will return a new random dad’s joke from \"https://rapidapi.com/KegenGuyll/api/dad-jokes\"",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.3.6",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
