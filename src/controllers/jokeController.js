@@ -6,15 +6,16 @@ app.get('/async', async(req, res) => {
             url: 'https://dad-jokes.p.rapidapi.com/random/joke',
             headers: {
               'content-type': 'application/octet-stream',
-              'X-RapidAPI-Key': 'SIGN-UP-FOR-KEY',
+              'X-RapidAPI-Key': 'fb285e6edfmshc04549f506e7901p182b88jsn78258363b8e1',
               'X-RapidAPI-Host': 'dad-jokes.p.rapidapi.com'
             }
           });
-            
-        res.status(200).json(response.data);
+    
+        const joke = response.data.body[0]
+        res.status(200).json({ joke });
 
     } catch (err) {
-        res.status(500).json({ "Dad's joke": err});
+        res.status(500).json("Dad's joke fail to load");
     }
 });
    
